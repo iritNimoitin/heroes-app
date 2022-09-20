@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'gocode-shop';
+  title = 'Tour of Heros';
+  onSave(){
+    console.log("saved")
+  }
+  onToggel(){
+this.title = this.title ? '' :"Tour Of Heros"
+  }
 }
